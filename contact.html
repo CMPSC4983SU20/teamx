@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+	body{
+		margin: 0;
+	}
+    .bkgd{
+    background: linear-gradient(to top, #000000 0%, #ff6600 100%)
+    }
+    #header {
+	background-color:#ff6600 90%;
+	border: 2px #ff6653;
+    padding: 50px 10px;
+    color: white;
+    text-align: center;
+    font-size: 90px; 
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+    }
+  
+  </style>
+  </head>
+  <body class="bkgd">
+    <div id="header">Summer Academy</div>
+    
+    <div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px">
+    <p>Contact</p>
+	
+    </div>
+	
+	<script>
+		window.onscroll = function() {scrollFun()};
+
+		function scrollFun() {
+			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				document.getElementById("header").style.fontSize = "30px";
+				} else {
+				document.getElementById("header").style.fontSize = "90px";
+				}
+			}
+	</script>
+
+  </body>
+</html>

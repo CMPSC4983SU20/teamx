@@ -1,0 +1,81 @@
+html{
+    height: 100%;
+}
+
+[class="col-"]{
+    float: left;
+}
+
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 56px auto;
+    line-height: 1.8;
+    
+}
+
+.bkgd{ 
+    background: linear-gradient(to top, #000000 0%, #ff6600 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div.left
+
+h1{
+    font-size: 2em;
+}
+
+.navt {
+    position: absolute;
+    background-color: #D5F2E3;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navt ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+
+.navt a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navt a:hover {
+    background-color: rgba(114, 82, 63, 0.438);
+}
+
+.navt a.active{
+    background-color: rgba(114, 82, 63, 0.438);
+}
+
+div.light{
+    margin: 1% auto;
+    max-width: 70%;
+    opacity: 0.7;
+    padding:2% 2% 5%;
+    background: #D5F2E3;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

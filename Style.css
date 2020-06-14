@@ -2,53 +2,49 @@ html{
     height: 100%;
 }
 
-[class="col-"]{
-    float: left;
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 18px;
 }
 
-
-body{
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    margin: 56px auto;
-    line-height: 1.8;
-    
+.grid-container > div{
+    text-align: left;
+    text-align: center;
+    padding: 13px 0;
+    font-size: 30px;
 }
 
-.bkgd{ 
-    background: linear-gradient(to top, #000000 0%, #ff6600 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.item1{
+    grid-area: 1 / 1 / 1 / 8;
 }
 
-div.left
-
-h1{
-    font-size: 2em;
+.item2{
+    grid-area: 3/ 2 / 5 / 7;
+    opacity: 0.7;
+    background: #D5F2E3;
 }
 
-.navt {
-    position: absolute;
-    background-color: #D5F2E3;
+.navt{
+    overflow: hidden;
+    background: #D5F2E3;
+    position: fixed;
     top: 0;
     width: 100%;
-    text-align: center;
 }
 
-.navt ul{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+.left{
+    padding-left: 11.1%;
 }
 
-
-
-.navt a {
+.navt a{
     float: left;
+    display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 30px;
 }
 
 .navt a:hover {
@@ -59,23 +55,43 @@ h1{
     background-color: rgba(114, 82, 63, 0.438);
 }
 
-div.light{
-    margin: 1% auto;
-    max-width: 70%;
-    opacity: 0.7;
-    padding:2% 2% 5%;
-    background: #D5F2E3;
+.navt .icon{
+    display: none;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+@media screen and (max-width: 600px) {
+    .navt a:not(:first-child) {display: none;}
+    .navt a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navt.responsive {position: relative;}
+    .navt.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+}
+
+.navt.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body{ 
+    margin: 0;
+}
+
+.bkgd{ 
+    background: linear-gradient(to top, #000000 0%, #ff6600 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 2em;
+}

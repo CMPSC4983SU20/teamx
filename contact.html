@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head class="head">	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-  	<link rel="stylesheet" href="Style.css">
-  </head>
-<nav class="navt">
-		<ul>
-			<a href="#home">Summer Academy</a>
-  			<a class="active" href="#contact">Contact</a>
- 			<a href="#application">Application</a> 
-		</ul>
-</nav>
-  <body class="bkgd">
-  <!--you will have to change this cause this is the body-->
-   <div>
-		<div class="light"> 
+<head class="head">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bkgd">
+<div class="grid-container">
+	<div class="item1">
+		<div class="navt">
+			<div class="left" id="myNavt">
+				<a href="#home">Summer Academy</a>
+				<a class="active" href="#contact">Contact</a>
+				<a href="#application">Application</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+	</div>
+	</div>
+		<div class="item2">
 			<center>
-				<img src="http://logosolusa.com/wp-content/uploads/parser/ECOK-Logo-1.png"></img> 
+				<img src="http://logosolusa.com/wp-content/uploads/parser/ECOK-Logo-1.png"></img>
 			</center>
 			<div style="opacity: 1">
 				<h1>Contact</h1>
-				<p>Mary Tarver</p>
+
 				<img src="https://www.ecok.edu/sites/default/files/pictures/IMG_9268.jpg-%28Cropped%29.jpg" alt="">
+				<p>Mary Tarver</p>
 			</div>
-    	</div>
-	</div>
-  </body>
+		</div>
+<script>
+	function myFunction() {
+  var x = document.getElementById("myNavt");
+  if (x.className === "navt") {
+    x.className += " responsive";
+  } else {
+    x.className = "navt";
+  }
+}
+</script>
+</body>
 </html>
